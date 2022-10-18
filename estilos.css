@@ -83,7 +83,12 @@ body .contenedor main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/imagenes/elmosquito.jpg);
+  background-color: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/imagenes/main.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/imagenes/main.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   color: white;
   min-height: 400px;
   text-align: center;
@@ -116,14 +121,23 @@ body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante {
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante img {
   width: 100%;
 }
 
+body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante h3 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante div {
+  font-size: 17px;
   margin-bottom: 10px;
 }
 
@@ -133,7 +147,7 @@ body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante but
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 17px;
   width: 200px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   margin-top: 10px;
   border-radius: 20px;
   border: none;
@@ -147,5 +161,10 @@ body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante but
 
 body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante button:hover {
   background-color: #c35757;
+}
+
+body .contenedor .contenedor-restaurantes #restaurantes div div .restaurante:hover {
+  -webkit-box-shadow: 0px 30px 20px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 30px 20px 5px rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=estilos.css.map */
